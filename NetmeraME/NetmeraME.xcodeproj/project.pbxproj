@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A100847280FDEE500866D64 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A100846280FDEE500866D64 /* NotificationService.swift */; };
+		1A10084B280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A100844280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A100856280FDFD600866D64 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A100855280FDFD600866D64 /* UserNotifications.framework */; };
+		1A100858280FDFD600866D64 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A100857280FDFD600866D64 /* UserNotificationsUI.framework */; };
+		1A10085B280FDFD600866D64 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A10085A280FDFD600866D64 /* NotificationViewController.swift */; };
+		1A10085E280FDFD600866D64 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A10085C280FDFD600866D64 /* MainInterface.storyboard */; };
+		1A100862280FDFD600866D64 /* MyNetmeraNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A100854280FDFD500866D64 /* MyNetmeraNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A100867280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A100866280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework */; };
+		1A100868280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A100866280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A10086A280FE03700866D64 /* NetmeraCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; };
+		1A10086B280FE03700866D64 /* NetmeraCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A10086C280FE03D00866D64 /* NetmeraCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; };
+		1A10086D280FE03D00866D64 /* NetmeraCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A100870280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A10086F280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework */; };
+		1A100871280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A10086F280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A586DED280D5BC100CAF5B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A586DEC280D5BC100CAF5B0 /* AppDelegate.swift */; };
+		1A586DEF280D5BC100CAF5B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A586DEE280D5BC100CAF5B0 /* SceneDelegate.swift */; };
+		1A586DF1280D5BC100CAF5B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A586DF0280D5BC100CAF5B0 /* ViewController.swift */; };
+		1A586DF4280D5BC100CAF5B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A586DF2280D5BC100CAF5B0 /* Main.storyboard */; };
+		1A586DF6280D5BC200CAF5B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A586DF5280D5BC200CAF5B0 /* Assets.xcassets */; };
+		1A586DF9280D5BC200CAF5B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A586DF7280D5BC200CAF5B0 /* LaunchScreen.storyboard */; };
+		1A586E02280D5CC000CAF5B0 /* Netmera.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E01280D5CC000CAF5B0 /* Netmera.xcframework */; };
+		1A586E03280D5CC000CAF5B0 /* Netmera.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E01280D5CC000CAF5B0 /* Netmera.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A586E06280D5CCB00CAF5B0 /* NetmeraAdId.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E05280D5CCB00CAF5B0 /* NetmeraAdId.xcframework */; };
+		1A586E07280D5CCB00CAF5B0 /* NetmeraAdId.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E05280D5CCB00CAF5B0 /* NetmeraAdId.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A586E09280D5CD400CAF5B0 /* NetmeraCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; };
+		1A586E0A280D5CD400CAF5B0 /* NetmeraCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A100849280FDEE500866D64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A586DE1280D5BC100CAF5B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A100843280FDEE500866D64;
+			remoteInfo = MyNetmeraNotificationServiceExtension;
+		};
+		1A100860280FDFD600866D64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A586DE1280D5BC100CAF5B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A100853280FDFD500866D64;
+			remoteInfo = MyNetmeraNotificationContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A10084C280FDEE500866D64 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A100862280FDFD600866D64 /* MyNetmeraNotificationContentExtension.appex in Embed App Extensions */,
+				1A10084B280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A100869280FE02E00866D64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A100868280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework in Embed Frameworks */,
+				1A10086B280FE03700866D64 /* NetmeraCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A10086E280FE03D00866D64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A10086D280FE03D00866D64 /* NetmeraCore.xcframework in Embed Frameworks */,
+				1A100871280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A586E04280D5CC100CAF5B0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A586E07280D5CCB00CAF5B0 /* NetmeraAdId.xcframework in Embed Frameworks */,
+				1A586E0A280D5CD400CAF5B0 /* NetmeraCore.xcframework in Embed Frameworks */,
+				1A586E03280D5CC000CAF5B0 /* Netmera.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A100844280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNetmeraNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A100846280FDEE500866D64 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1A100848280FDEE500866D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A100854280FDFD500866D64 /* MyNetmeraNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyNetmeraNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A100855280FDFD600866D64 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1A100857280FDFD600866D64 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		1A10085A280FDFD600866D64 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		1A10085D280FDFD600866D64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		1A10085F280FDFD600866D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A100866280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NetmeraNotificationServiceExtension.xcframework; path = "../../../Downloads/Frameworks 2/NetmeraNotificationServiceExtension.xcframework"; sourceTree = "<group>"; };
+		1A10086F280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NetmeraNotificationContentExtension.xcframework; path = "../../../Downloads/Frameworks 2/NetmeraNotificationContentExtension.xcframework"; sourceTree = "<group>"; };
+		1A586DE9280D5BC100CAF5B0 /* NetmeraME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetmeraME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A586DEC280D5BC100CAF5B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A586DEE280D5BC100CAF5B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A586DF0280D5BC100CAF5B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A586DF3280D5BC100CAF5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A586DF5280D5BC200CAF5B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A586DF8280D5BC200CAF5B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A586DFA280D5BC200CAF5B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A586E01280D5CC000CAF5B0 /* Netmera.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Netmera.xcframework; path = "../../../Downloads/Frameworks 2/Netmera.xcframework"; sourceTree = "<group>"; };
+		1A586E05280D5CCB00CAF5B0 /* NetmeraAdId.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NetmeraAdId.xcframework; path = "../../../Downloads/Frameworks 2/NetmeraAdId.xcframework"; sourceTree = "<group>"; };
+		1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NetmeraCore.xcframework; path = "../../../Downloads/Frameworks 2/NetmeraCore.xcframework"; sourceTree = "<group>"; };
+		1A586E0B280D5D5100CAF5B0 /* NetmeraME.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetmeraME.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A100841280FDEE500866D64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A100867280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework in Frameworks */,
+				1A10086A280FE03700866D64 /* NetmeraCore.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A100851280FDFD500866D64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A100858280FDFD600866D64 /* UserNotificationsUI.framework in Frameworks */,
+				1A100870280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework in Frameworks */,
+				1A10086C280FE03D00866D64 /* NetmeraCore.xcframework in Frameworks */,
+				1A100856280FDFD600866D64 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A586DE6280D5BC100CAF5B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A586E06280D5CCB00CAF5B0 /* NetmeraAdId.xcframework in Frameworks */,
+				1A586E09280D5CD400CAF5B0 /* NetmeraCore.xcframework in Frameworks */,
+				1A586E02280D5CC000CAF5B0 /* Netmera.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A100845280FDEE500866D64 /* MyNetmeraNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1A100846280FDEE500866D64 /* NotificationService.swift */,
+				1A100848280FDEE500866D64 /* Info.plist */,
+			);
+			path = MyNetmeraNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		1A100859280FDFD600866D64 /* MyNetmeraNotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1A10085A280FDFD600866D64 /* NotificationViewController.swift */,
+				1A10085C280FDFD600866D64 /* MainInterface.storyboard */,
+				1A10085F280FDFD600866D64 /* Info.plist */,
+			);
+			path = MyNetmeraNotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		1A586DE0280D5BC100CAF5B0 = {
+			isa = PBXGroup;
+			children = (
+				1A586DEB280D5BC100CAF5B0 /* NetmeraME */,
+				1A100845280FDEE500866D64 /* MyNetmeraNotificationServiceExtension */,
+				1A100859280FDFD600866D64 /* MyNetmeraNotificationContentExtension */,
+				1A586DEA280D5BC100CAF5B0 /* Products */,
+				1A586E00280D5CC000CAF5B0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A586DEA280D5BC100CAF5B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A586DE9280D5BC100CAF5B0 /* NetmeraME.app */,
+				1A100844280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex */,
+				1A100854280FDFD500866D64 /* MyNetmeraNotificationContentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A586DEB280D5BC100CAF5B0 /* NetmeraME */ = {
+			isa = PBXGroup;
+			children = (
+				1A586E0B280D5D5100CAF5B0 /* NetmeraME.entitlements */,
+				1A586DEC280D5BC100CAF5B0 /* AppDelegate.swift */,
+				1A586DEE280D5BC100CAF5B0 /* SceneDelegate.swift */,
+				1A586DF0280D5BC100CAF5B0 /* ViewController.swift */,
+				1A586DF2280D5BC100CAF5B0 /* Main.storyboard */,
+				1A586DF5280D5BC200CAF5B0 /* Assets.xcassets */,
+				1A586DF7280D5BC200CAF5B0 /* LaunchScreen.storyboard */,
+				1A586DFA280D5BC200CAF5B0 /* Info.plist */,
+			);
+			path = NetmeraME;
+			sourceTree = "<group>";
+		};
+		1A586E00280D5CC000CAF5B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A10086F280FE04A00866D64 /* NetmeraNotificationContentExtension.xcframework */,
+				1A100866280FE02E00866D64 /* NetmeraNotificationServiceExtension.xcframework */,
+				1A586E08280D5CD400CAF5B0 /* NetmeraCore.xcframework */,
+				1A586E05280D5CCB00CAF5B0 /* NetmeraAdId.xcframework */,
+				1A586E01280D5CC000CAF5B0 /* Netmera.xcframework */,
+				1A100855280FDFD600866D64 /* UserNotifications.framework */,
+				1A100857280FDFD600866D64 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A100843280FDEE500866D64 /* MyNetmeraNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A10084F280FDEE500866D64 /* Build configuration list for PBXNativeTarget "MyNetmeraNotificationServiceExtension" */;
+			buildPhases = (
+				1A100840280FDEE500866D64 /* Sources */,
+				1A100841280FDEE500866D64 /* Frameworks */,
+				1A100842280FDEE500866D64 /* Resources */,
+				1A100869280FE02E00866D64 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNetmeraNotificationServiceExtension;
+			productName = MyNetmeraNotificationServiceExtension;
+			productReference = 1A100844280FDEE500866D64 /* MyNetmeraNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1A100853280FDFD500866D64 /* MyNetmeraNotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A100863280FDFD600866D64 /* Build configuration list for PBXNativeTarget "MyNetmeraNotificationContentExtension" */;
+			buildPhases = (
+				1A100850280FDFD500866D64 /* Sources */,
+				1A100851280FDFD500866D64 /* Frameworks */,
+				1A100852280FDFD500866D64 /* Resources */,
+				1A10086E280FE03D00866D64 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNetmeraNotificationContentExtension;
+			productName = MyNetmeraNotificationContentExtension;
+			productReference = 1A100854280FDFD500866D64 /* MyNetmeraNotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		1A586DE8280D5BC100CAF5B0 /* NetmeraME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A586DFD280D5BC200CAF5B0 /* Build configuration list for PBXNativeTarget "NetmeraME" */;
+			buildPhases = (
+				1A586DE5280D5BC100CAF5B0 /* Sources */,
+				1A586DE6280D5BC100CAF5B0 /* Frameworks */,
+				1A586DE7280D5BC100CAF5B0 /* Resources */,
+				1A586E04280D5CC100CAF5B0 /* Embed Frameworks */,
+				1A10084C280FDEE500866D64 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A10084A280FDEE500866D64 /* PBXTargetDependency */,
+				1A100861280FDFD600866D64 /* PBXTargetDependency */,
+			);
+			name = NetmeraME;
+			productName = NetmeraME;
+			productReference = 1A586DE9280D5BC100CAF5B0 /* NetmeraME.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A586DE1280D5BC100CAF5B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1A100843280FDEE500866D64 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					1A100853280FDFD500866D64 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					1A586DE8280D5BC100CAF5B0 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1A586DE4280D5BC100CAF5B0 /* Build configuration list for PBXProject "NetmeraME" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A586DE0280D5BC100CAF5B0;
+			productRefGroup = 1A586DEA280D5BC100CAF5B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A586DE8280D5BC100CAF5B0 /* NetmeraME */,
+				1A100843280FDEE500866D64 /* MyNetmeraNotificationServiceExtension */,
+				1A100853280FDFD500866D64 /* MyNetmeraNotificationContentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A100842280FDEE500866D64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A100852280FDFD500866D64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A10085E280FDFD600866D64 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A586DE7280D5BC100CAF5B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A586DF9280D5BC200CAF5B0 /* LaunchScreen.storyboard in Resources */,
+				1A586DF6280D5BC200CAF5B0 /* Assets.xcassets in Resources */,
+				1A586DF4280D5BC100CAF5B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A100840280FDEE500866D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A100847280FDEE500866D64 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A100850280FDFD500866D64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A10085B280FDFD600866D64 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A586DE5280D5BC100CAF5B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A586DF1280D5BC100CAF5B0 /* ViewController.swift in Sources */,
+				1A586DED280D5BC100CAF5B0 /* AppDelegate.swift in Sources */,
+				1A586DEF280D5BC100CAF5B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A10084A280FDEE500866D64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A100843280FDEE500866D64 /* MyNetmeraNotificationServiceExtension */;
+			targetProxy = 1A100849280FDEE500866D64 /* PBXContainerItemProxy */;
+		};
+		1A100861280FDFD600866D64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A100853280FDFD500866D64 /* MyNetmeraNotificationContentExtension */;
+			targetProxy = 1A100860280FDFD600866D64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A10085C280FDFD600866D64 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A10085D280FDFD600866D64 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		1A586DF2280D5BC100CAF5B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A586DF3280D5BC100CAF5B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A586DF7280D5BC200CAF5B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A586DF8280D5BC200CAF5B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A10084D280FDEE500866D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNetmeraNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyNetmeraNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME.MyNetmeraNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A10084E280FDEE500866D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNetmeraNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyNetmeraNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME.MyNetmeraNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A100864280FDFD600866D64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNetmeraNotificationContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyNetmeraNotificationContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME.MyNetmeraNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A100865280FDFD600866D64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyNetmeraNotificationContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyNetmeraNotificationContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME.MyNetmeraNotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A586DFB280D5BC200CAF5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A586DFC280D5BC200CAF5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A586DFE280D5BC200CAF5B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetmeraME/NetmeraME.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetmeraME/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A586DFF280D5BC200CAF5B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NetmeraME/NetmeraME.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 95N24W2PH8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetmeraME/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.NetmeraME;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A10084F280FDEE500866D64 /* Build configuration list for PBXNativeTarget "MyNetmeraNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A10084D280FDEE500866D64 /* Debug */,
+				1A10084E280FDEE500866D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A100863280FDFD600866D64 /* Build configuration list for PBXNativeTarget "MyNetmeraNotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A100864280FDFD600866D64 /* Debug */,
+				1A100865280FDFD600866D64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A586DE4280D5BC100CAF5B0 /* Build configuration list for PBXProject "NetmeraME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A586DFB280D5BC200CAF5B0 /* Debug */,
+				1A586DFC280D5BC200CAF5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A586DFD280D5BC200CAF5B0 /* Build configuration list for PBXNativeTarget "NetmeraME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A586DFE280D5BC200CAF5B0 /* Debug */,
+				1A586DFF280D5BC200CAF5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A586DE1280D5BC100CAF5B0 /* Project object */;
+}

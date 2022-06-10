@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           }
         // Override point for customization after application launch.
         Netmera .start()
-        Netmera.setAPIKey("12-s7fT9JHi6KJGUSISRO30OzdCDlNj8NwuFE1t9LM6Yoau0m2lbTg")
+        Netmera.setAPIKey("your_api_key")
         Netmera.setLogLevel(NetmeraLogLevel.debug)
         // Call this method with needed notification types
         Netmera.requestPushNotificationAuthorization(forTypes: [.alert, .badge, .sound])
